@@ -1,0 +1,82 @@
+/*
+body>section{
+    display: grid;
+    grid-template-rows: 70px 990px 1fr;
+}*/
+body {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    margin: auto;
+    width: 960px;
+    height: 1450px;
+    line-height: 1.5;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+   
+    align-items: center;
+    width: 960px;
+    height: 110px;
+}
+header:hover{
+    background-color: rgb(70, 63, 63);
+}
+/*
+header nav  {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+*/
+header a {
+    text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+main>img {
+    width: 960px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+main section:nth-child(2){
+    width: 960px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+main section:nth-child(3){
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+main section:nth-child(3) nav:nth-child(2){
+    display: grid;
+    grid-template-rows: 1fr 30px;
+}
+main section nav {
+    height: 400px;
+}
+main section nav p{
+    font-family: Verdana;
+    line-height: 2;
+    font-size: larger;
+    overflow: -moz-hidden-unscrollable;
+
+}
+footer {
+    width: 960px;
+    height: 150px;
+    /* background-color: rgb(90, 81, 81); */
+}
+footer:hover{
+    background-color: rgb(70, 63, 63);
+}
+button{
+    color: white;
+    background-color: rgb(70, 63, 63);
+}
+button:hover{
+    background-color: black;
+}
